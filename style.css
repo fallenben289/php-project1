@@ -1,0 +1,18 @@
+ul{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    font-size: 18px;
+    margin-left: 10%;
+}
