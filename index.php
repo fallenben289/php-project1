@@ -21,7 +21,7 @@
     <nav>
         <ul>
             <li><a href="#Insert">Insert</a></li>
-            <li><a href="#View">View</a></li>
+            <li><a href="view.php">View</a></li>
         </ul>
     </nav>
 
@@ -65,14 +65,6 @@ if (isset($_POST['liabilities'])) {
     }
 
 
-    //To Calculate the value of column of liabilities through the table of personal ledger
-            $res = mysqli_query($con, 'SELECT SUM(liabilities) AS sum FROM personal_ledger');
-            $row = $res->fetch_array();
-            $sum = $row['sum'];
-
-
-            
-            echo "<h2>Total<br>Liabilities=".$sum."</h2>";
            
         mysqli_close($con);
 
