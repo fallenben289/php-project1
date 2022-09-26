@@ -30,6 +30,8 @@
 
      
      echo "<h2>Total<br>Liabilities=".$sum."</h2>";
-
+        echo " <form><input type=\"submit\" value=\"Print\" onclick=\"window.print()\">
+        </form>";
+        
      mysqli_close($con);
 ?>
