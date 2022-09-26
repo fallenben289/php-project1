@@ -10,11 +10,16 @@
     //Get the Output by rows
     echo "<table><tr><th>Name:</th>
     <th>Liabilities:</th>
-    <th>Date:</th></tr>";
+    <th>Date:</th>
+    <th>Operation:</th></tr>";
     if($res->num_rows >0) {
         while($row=$res->fetch_assoc()){
-            echo "<tr><td>".$row["name"]."</td>"."<td>".$row["liabilities"]."</td>"."<td>".$row["date"]."</td>";
+            echo "<tr><td>".$row["name"]."</td>"."<td>".$row["liabilities"]."</td>"."<td>".$row["date"]."</td><td>"."</td>";
+            ?>
+            
 
+            <td><a href="delete.php?id=<?php echo $row["id"]; ?>">Delete</a></td>
+            <?php
         }
 
         echo "</tr></table>";
